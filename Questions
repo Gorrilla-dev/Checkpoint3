@@ -1,0 +1,25 @@
+//Question 1 
+x=(input("Numbers:"))
+lst=[]
+for i in range(len(x)):
+    y=int(x[i])
+    lst.append(y)
+print(lst)
+m=1
+for i in range (len(lst)):
+    m=m*lst[i]
+print(m)
+//Question 2
+from collections import Counter
+d1 = {'a': 100, 'b': 200, 'c':300}
+d2 = {'a': 300, 'b': 200, 'd':400}
+d = Counter(d1) + Counter(d2)
+print(d)
+
+
+//Question 4
+price = [('item1', '12.20'), ('item2', '15.10'), ('item3', '24.5')]
+print( sorted(price, key=lambda x: float(x[1]), reverse=True))
+ 
+ #### J ai fait des recherches pour trouver les solutions ###
+
